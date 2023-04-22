@@ -36,7 +36,7 @@ img {
 }
 
 .page__body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -118,7 +118,7 @@ img {
 
 .main-nav__item {
   padding: 22px 0 24px 0;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
   text-align: center;
 }
 @media (min-width: 769px) {
@@ -146,14 +146,14 @@ img {
 }
 
 .main-nav__link--active {
-  border-bottom: 2px solid #68B738;
+  border-bottom: 2px solid #68b738;
 }
 
 .main-nav__tooggle {
   width: 24px;
   height: 16px;
   border: none;
-  background-color: black;
+  background-color: #000000;
 }
 @media (min-width: 769px) {
   .main-nav__tooggle {
@@ -162,22 +162,39 @@ img {
 }
 
 .promo {
-  background-image: url(../../img/background-cat.png);
-  width: 320px;
+  background-image: url("../../img/background-cat.png");
+  background-size: 100%;
+  min-width: 320px;
+  padding: 27px 20px 20px 20px;
   padding-top: 27px;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-
-.promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
+@media (min-width: 769px) {
+  .promo {
+    background-image: none;
+    padding: 0 30px 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo {
+    padding: 0 110px 0 100px;
+    max-width: 1440px;
+  }
 }
 
 .promo__tittle {
   text-align: center;
   color: #ffffff;
   margin-bottom: 25px;
+}
+@media (min-width: 769px) {
+  .promo__tittle {
+    text-align: left;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__slogan {
@@ -191,15 +208,36 @@ img {
   margin: 0;
   margin-bottom: 29px;
 }
+@media (min-width: 769px) {
+  .promo__slogan {
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 
 .promo__image {
   display: block;
+  margin: 0 auto;
   width: 280px;
   height: 270px;
 }
+@media (min-width: 769px) {
+  .promo__image {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media (min-width: 769px) {
+  .promo__link {
+    width: 244px;
+  }
+}
 
 .button {
-  background-color: #68B738;
+  background-color: #68b738;
   color: #ffffff;
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -212,27 +250,40 @@ img {
   padding: 10px 0;
   cursor: pointer;
   box-sizing: border-box;
-  width: 100%;
 }
 .button--color {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #444444;
 }
 
 .programs {
-  width: 320px;
+  min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
-
-.programs__wrapper {
-  width: 280px;
-  margin: 0 auto;
+@media (min-width: 769px) {
+  .programs {
+    padding: 0 30px 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs {
+    padding: 0 110px 0 100px;
+  }
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (min-width: 1440px) {
+  .programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .programs__item {
@@ -267,13 +318,20 @@ img {
 }
 
 .plan-action {
-  width: 320px;
+  min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
-
-.plan-action__wrapper {
-  width: 280px;
-  margin: 0 auto;
+@media (min-width: 769px) {
+  .plan-action {
+    padding: 0 30px 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .plan-action {
+    padding: 0 110px 0 100px;
+  }
 }
 
 .plan-action__title {
@@ -286,15 +344,47 @@ img {
   padding: 0;
   list-style: none;
 }
+@media (min-width: 769px) {
+  .plan-action__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+    padding-right: 79px;
+  }
+}
+@media (min-width: 1440px) {
+  .plan-action__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 .plan-action__item {
   margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .plan-action__item {
+    padding: 151px 25px 57px 0;
+    background-repeat: no-repeat;
+    background-position: right 40px;
+  }
+  .plan-action__item--icon-leaf {
+    background-image: url("../../img/number1.png");
+  }
+  .plan-action__item--icon-cup {
+    background-image: url("../../img/number2.png");
+  }
+  .plan-action__item--icon-eat {
+    background-image: url("../../img/number3.png");
+  }
+  .plan-action__item--icon-alarm {
+    background-image: url("../../img/number4.png");
+  }
 }
 
 .example {
   width: 320px;
   margin: 0 auto;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .example__wrapper {
@@ -371,7 +461,7 @@ img {
 }
 
 .contacts__text {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -439,7 +529,7 @@ img {
 
 .catalog__item {
   margin: 0 auto;
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
 }
 
 .catalog__list {
@@ -499,7 +589,7 @@ img {
 .present__wrapper {
   width: 280px;
   margin: 0 auto;
-  background-image: url(../../img/background-present.png);
+  background-image: url("../../img/background-present.png");
   padding: 186px 0 43px 0;
 }
 
@@ -507,7 +597,7 @@ img {
   line-height: 18px;
   text-align: center;
   width: 160px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
 }
 
@@ -533,7 +623,7 @@ img {
   display: grid;
   grid-template-columns: 150px 130px;
   padding: 13px 0;
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
 }
 
 .card-additional__tittle {
@@ -576,8 +666,8 @@ img {
 }
 .form-group--choice-program {
   padding: 22px 0 19px 0;
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 .form-group--cat-information {
   padding-bottom: 24px;
@@ -611,7 +701,7 @@ img {
 
 .form-group__textarea {
   grid-column: 1/3;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   padding: 9px 12px 0 15px;
   box-sizing: border-box;
   width: 100%;
@@ -638,7 +728,7 @@ img {
 }
 
 .input {
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   padding: 14px 20px 13px 20px;
 }
 
@@ -657,7 +747,7 @@ img {
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
 .mark--checkbox {
