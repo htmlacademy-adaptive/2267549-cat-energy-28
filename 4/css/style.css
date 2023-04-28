@@ -868,19 +868,7 @@ img {
 }
 
 .main-inner__programs-form {
-  padding: 0 20px;
-  min-width: 320px;
   margin: 0 auto;
-}
-@media (min-width: 769px) {
-  .main-inner__programs-form {
-    padding: 0 70px;
-  }
-}
-@media (min-width: 1440px) {
-  .main-inner__programs-form {
-    padding: 0 110px;
-  }
 }
 
 .main-inner__subtittle {
@@ -925,11 +913,22 @@ img {
   }
 }
 
+.main-inner__form-wrapper {
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+@media (min-width: 769px) {
+  .main-inner__form-wrapper {
+    padding: 0 70px;
+  }
+}
 @media (min-width: 1440px) {
   .main-inner__form-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    padding: 0 110px;
   }
 }
 
@@ -952,7 +951,6 @@ img {
 .catalog__item {
   margin: 0 auto;
   border-bottom: 1px solid #cdcdcd;
-  width: 100%;
 }
 @media (min-width: 769px) {
   .catalog__item {
@@ -983,17 +981,18 @@ img {
 
 .card {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   padding: 19px 20px;
+  box-sizing: border-box;
 }
 @media (min-width: 769px) {
   .card {
     padding: 0;
   }
 }
-
-.card__show-more {
-  grid-template-columns: 280px;
+.card--show-more {
+  grid-template-columns: 1fr;
 }
 
 .card__image {
@@ -1146,10 +1145,17 @@ img {
 .programs-form__button-form {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 20px 0 20px;
 }
 @media (min-width: 769px) {
   .programs-form__button-form {
     grid-template-columns: 1fr 1fr;
+    padding: 0 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs-form__button-form {
+    padding: 0 110px;
   }
 }
 
@@ -1228,6 +1234,22 @@ img {
   }
 }
 
+.form-group__wrapper-label {
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+@media (min-width: 769px) {
+  .form-group__wrapper-label {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-group__wrapper-label {
+    padding: 0 110px;
+  }
+}
+
 .form-group__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -1282,13 +1304,14 @@ img {
   line-height: 26px;
   position: relative;
   margin-bottom: 35px;
+  width: 100%;
 }
 .form-group__tittle::before {
   content: "";
   position: absolute;
   background-color: #68b738;
   height: 2px;
-  width: 100vw;
+  width: 100%;
   top: 50%;
 }
 @media (min-width: 769px) {
