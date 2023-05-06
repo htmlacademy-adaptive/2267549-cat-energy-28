@@ -118,9 +118,13 @@ img {
   position: absolute;
   left: 0;
   top: 64px;
-  background-color: #ffffff;
   width: 100%;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .main-nav__list {
+    background-color: #ffffff;
+  }
 }
 @media (min-width: 769px) {
   .main-nav__list {
@@ -288,7 +292,7 @@ img {
 }
 @media (min-width: 769px) {
   .promo__wrapper {
-    padding: 0 30px 526px 30px;
+    padding: 64px 30px 526px 30px;
   }
 }
 @media (min-width: 1440px) {
