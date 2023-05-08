@@ -2,21 +2,21 @@
   font-family: "Lato";
   font-weight: 800;
   font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../../fonts/lato/Lato-Regular.woff") format("woff");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../../fonts/oswald/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 500;
   font-style: normal;
-  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 img {
@@ -227,11 +227,11 @@ img {
   border: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url("../../img/menu-closed.svg");
+  background-image: url("../img/menu-closed.svg");
 }
 
 .main-nav--opened .main-nav__tooggle {
-  background-image: url("../../img/menu-opened.svg");
+  background-image: url("../img/menu-opened.svg");
   width: 20px;
   height: 20px;
 }
@@ -545,7 +545,7 @@ img {
 .programs__item--slim::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/cat-slim.svg");
+  background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
   width: 36px;
   height: 50px;
@@ -577,7 +577,7 @@ img {
 .programs__item--fat::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/cat-fat.svg");
+  background-image: url("../img/cat-fat.svg");
   background-repeat: no-repeat;
   width: 67px;
   height: 28px;
@@ -757,16 +757,16 @@ img {
   }
 }
 .plan-action__item--icon-leaf::before {
-  background-image: url("../../img/icon-leaf.svg");
+  background-image: url("../img/icon-leaf.svg");
 }
 .plan-action__item--icon-cup::before {
-  background-image: url("../../img/icon-cup.svg");
+  background-image: url("../img/icon-cup.svg");
 }
 .plan-action__item--icon-eat::before {
-  background-image: url("../../img/icon-eat.svg");
+  background-image: url("../img/icon-eat.svg");
 }
 .plan-action__item--icon-alarm::before {
-  background-image: url("../../img/icon-alarm.svg");
+  background-image: url("../img/icon-alarm.svg");
 }
 @media (min-width: 769px) {
   .plan-action__item {
@@ -778,16 +778,16 @@ img {
     margin-bottom: 0;
   }
   .plan-action__item--icon-leaf {
-    background-image: url("../../img/number1.png");
+    background-image: url("../img/number1.png");
   }
   .plan-action__item--icon-cup {
-    background-image: url("../../img/number2.png");
+    background-image: url("../img/number2.png");
   }
   .plan-action__item--icon-eat {
-    background-image: url("../../img/number3.png");
+    background-image: url("../img/number3.png");
   }
   .plan-action__item--icon-alarm {
-    background-image: url("../../img/number4.png");
+    background-image: url("../img/number4.png");
   }
 }
 
@@ -1029,6 +1029,7 @@ img {
   min-width: 320px;
   margin: 0 auto;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
@@ -1532,19 +1533,22 @@ img {
 
 .present {
   margin: 0 auto;
-  background-image: url("../../img/background-present.png");
+  background-image: url("../img/background-present.png");
   background-repeat: none;
   background-size: cover;
   padding: 59px 61px 43px 58px;
+  margin-bottom: 35px;
 }
 @media (min-width: 769px) {
   .present {
     padding: 57px 124px 60px 77px;
+    margin-bottom: 76px;
   }
 }
 @media (min-width: 1440px) {
   .present {
     padding: 56px 43px 42px 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -1572,7 +1576,7 @@ img {
   content: "";
   display: block;
   margin: 0 auto;
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
   width: 78px;
   height: 80px;
   margin-bottom: 48px;
