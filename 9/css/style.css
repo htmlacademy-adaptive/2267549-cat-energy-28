@@ -2175,8 +2175,8 @@ img {
 }
 
 .form-group {
+  max-width: 1440px;
   border: none;
-  margin: 0;
   padding: 0;
 }
 @media (min-width: 769px) {
@@ -2185,10 +2185,12 @@ img {
   }
 }
 .form-group--choice-program {
-  padding: 22px 0 19px 0;
+  padding: 23px 20px 19px 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   margin-bottom: 26px;
+  box-sizing: border-box;
+  min-width: 320px;
 }
 @media (min-width: 769px) {
   .form-group--choice-program {
@@ -2205,10 +2207,14 @@ img {
 }
 .form-group--cat-information {
   margin-bottom: 21px;
+  box-sizing: border-box;
+  min-width: 320px;
+  padding: 0 20px 0 20px;
 }
 @media (min-width: 769px) {
   .form-group--cat-information {
     margin-bottom: 72px;
+    padding: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -2218,6 +2224,7 @@ img {
   }
 }
 .form-group--contacts-buyer, .form-group--comment {
+  margin: 0 auto;
   margin-bottom: 23px;
 }
 @media (min-width: 769px) {
@@ -2236,6 +2243,7 @@ img {
   }
 }
 .form-group--additional {
+  margin: 0 auto;
   margin-bottom: 34px;
 }
 @media (min-width: 769px) {
@@ -2249,23 +2257,10 @@ img {
   }
 }
 
-.form-group__wrapper {
-  box-sizing: border-box;
-  min-width: 320px;
-  padding: 0 20px 0 20px;
-}
-@media (min-width: 769px) {
-  .form-group__wrapper {
-    padding: 0;
-  }
-}
-
 .form-group__wrapper-label {
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 @media (min-width: 1440px) {
   .form-group__wrapper-label--contacts-buyer {
