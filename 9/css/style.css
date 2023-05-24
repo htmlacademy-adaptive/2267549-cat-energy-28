@@ -2224,6 +2224,7 @@ img {
   }
 }
 .form-group--contacts-buyer, .form-group--comment {
+  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 23px;
 }
@@ -2243,6 +2244,7 @@ img {
   }
 }
 .form-group--additional {
+  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 34px;
 }
